@@ -129,7 +129,7 @@ public class ClienteController {
 			logger.info("Forma usando HttpServletRequest: Hola ".concat(auth.getName()).concat(" NO tienes acceso!"));
 		}	
 		
-		Pageable pageRequest = PageRequest.of(page, 4);
+		Pageable pageRequest = PageRequest.of(page, 5);
 
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 
